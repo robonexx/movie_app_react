@@ -1,9 +1,9 @@
 ## movielist app w/react
 
-- Project
+- React Project
 - Api Calls
-- Search
-- Movie info
+- Search function
+- Movie info visualization
 
 API links for this project
 
