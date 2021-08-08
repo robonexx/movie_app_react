@@ -9,34 +9,36 @@
 body {
   background: #6264a7;
   display: flex;
-  align-items: center;
   font-family: 'Josefin Sans', sans-serif;
+  width: 100vw;
+  height: 100%;
 }
 
 .header {
   width: 100%;
   height: 10vh;
-  text-align: center;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 4rem 15rem;
 }
 .header h1 {
   color: #121212;
 }
+
 .search {
   padding: 0.5rem 0.5rem;
-  border: 1px solid whitesmoke;
-  border-radius: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7));
 }
 input.search {
-  height: 3vh;
   outline: none;
-  background: #1e2e3e;
+  background: #121212;
   color: #9fa4fe;
 }
 
@@ -46,8 +48,9 @@ input.search {
   background: transparent;
 }
 .header label {
-  font-size: 14px;
-  color: whitesmoke;
+  font-size: 1.4rem;
+  color: #e5e5df;
+  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.7));
 }
 
 .container {
@@ -70,6 +73,7 @@ input.search {
 }
 .movie img {
   width: 100%;
+  object-fit: cover;
 }
 
 .movie-info {
@@ -126,7 +130,6 @@ input.search {
 }
 
 .tag {
-  background-color: #121212;
   border-radius: 1px;
   font-weight: 600;
 }
@@ -139,4 +142,35 @@ input.search {
 }
 .tag.red {
   color: red;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  .header label {
+    font-size: 18px;
+  }
+
+  .search {
+    padding: 0.1rem 0.1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+  }
+  .container {
+    margin: 1rem 0;
+  }
 }

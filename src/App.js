@@ -52,24 +52,24 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <header>
+    <wrapper>
         <div className="header">
-          <div>
+          <div className="topTitle">
              <h1>Movie search app</h1>
               <p>(hover on image for overview)</p>
           </div>
             <div>
-                <form onSubmit={handleOnSubmit}>
-            <label htmlFor="">Search Movie: </label>
+                <form  onSubmit={handleOnSubmit}>
+            <label>Search Movie: </label>
             <input className="search" 
             type="text" 
-            placeholder="Type here... "
+            placeholder="Search... "
             value={searchTerm}
             onChange={handleOnChange}/>
             </form>
             </div>
         </div>
-      </header>
+      </wrapper>
       
     <div className="container">
       {movies.length > 0 && 
