@@ -1,10 +1,20 @@
 import React, { useEffect, useState }from "react";
 import Movie from './components/Movie';
+require('dotenv').config();
 
-const FEAUTRED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5fa32f8341fad5c102aff8336a2ae512&page=1";
+
+/* Setting api key imported from .env file */
+const api_key = process.env.REACT_APP_API_KEY
 
 
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=5fa32f8341fad5c102aff8336a2ae512&query=";
+/* api url for popular movies and page that loads up on first screen before searching for movies  */
+/* const FEAUTRED_API = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${api_key}&page=1`; */
+const FEAUTRED_API = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${api_key}&page=1`;
+
+/* 
+search url / query
+*/
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?&api_key=${api_key}&query=`;
 
 function App() {
 
@@ -56,7 +66,8 @@ const handleOnChange = (e) => {
             </form>
             </div>
         </div>
-        </header>
+      </header>
+      
     <div className="container">
       {movies.length > 0 && 
       movies.map((movie) => 

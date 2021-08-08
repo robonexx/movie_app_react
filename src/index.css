@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +10,7 @@ body {
   background: #1e2e3e;
   display: flex;
   align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .header {
@@ -57,6 +60,7 @@ input.search {
   position: relative;
   margin: 1.5rem 2rem;
   width: 260px;
+  height: 480px;
   background-color: #333b50;
   color: whitesmoke;
   text-align: center;
@@ -70,6 +74,7 @@ input.search {
 
 .movie-info {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
