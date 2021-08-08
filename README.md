@@ -1,4 +1,4 @@
-## movielist app w/react
+## movie search app react
 
 - React Project
 - Api Calls
