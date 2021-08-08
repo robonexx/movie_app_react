@@ -54,7 +54,10 @@ const handleOnChange = (e) => {
     <>
     <header>
         <div className="header">
-            <h1>Movie search app</h1>
+          <div>
+             <h1>Movie search app</h1>
+              <p>(hover on image for overview)</p>
+          </div>
             <div>
                 <form onSubmit={handleOnSubmit}>
             <label htmlFor="">Search Movie: </label>

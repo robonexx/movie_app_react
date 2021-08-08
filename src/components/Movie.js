@@ -23,10 +23,12 @@ const Movie = ({ title, poster_path, overview, vote_average, vote_count }) => (
     <div className="movie">
         <img src={IMG_API + poster_path} alt={title}/>
         <div className="movie-info">
+            <div className="topInfo">
             <h2>{title}</h2>
             <span className={
                 `tag ${setVoteClass(vote_average)}`
             }>{vote_average}</span>
+                </div>
             <span>{`Number of votes ${vote_count}`}</span>
         </div>
 
