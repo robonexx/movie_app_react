@@ -52,7 +52,7 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <wrapper>
+    <div>
         <div className="header">
           <div className="topTitle">
              <h1>Movie search app</h1>
@@ -69,7 +69,7 @@ const handleOnChange = (e) => {
             </form>
             </div>
         </div>
-      </wrapper>
+      </div>
       
     <div className="container">
       {movies.length > 0 && 
