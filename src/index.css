@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #6264a7;
+  background: #121212;
   display: flex;
   font-family: 'Josefin Sans', sans-serif;
   width: 100vw;
@@ -25,9 +25,11 @@ body {
   align-items: center;
   padding: 4rem 15rem;
 }
-.header h1 {
-  color: #121212;
+.header h1,
+.header p {
+  color: #e5e5df;
 }
+ 
 
 .search {
   padding: 0.5rem 0.5rem;
@@ -40,7 +42,7 @@ body {
 input.search {
   outline: none;
   background: #121212;
-  color: #9fa4fe;
+  color: #fff;
 }
 
 .search::placeholder {
@@ -50,7 +52,7 @@ input.search {
 }
 .header label {
   font-size: 1.4rem;
-  color: #e5e5df;
+  color: #e5e5dc;
   filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.7));
 }
 
@@ -66,7 +68,7 @@ input.search {
   width: 260px;
   height: 480px;
   background-color: #121212;
-  color: #b7bafc;
+  color: #fafafa;
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
@@ -105,7 +107,7 @@ input.search {
 
 .movie-overview {
   position: absolute;
-  background: #121212;
+  background: #282828;
   color: #e5e5df;
   padding: 1rem 1rem;
   bottom: 0;
